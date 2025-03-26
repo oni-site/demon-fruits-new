@@ -1,121 +1,106 @@
+/* Resetando margens e espaçamentos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Cor de fundo e fonte geral */
 body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #2c003e, #4e00ff);
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #4e00ff, #00c6ff);
     color: white;
+    padding: 0;
+    margin: 0;
 }
 
+/* Cabeçalho */
 header {
-    background: rgba(0, 0, 0, 0.8);
-    padding: 30px 0;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px 0;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
 header h1 {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 3.5em;
-    color: #ffcc00;
+    font-size: 3em;
+    letter-spacing: 2px;
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 nav ul {
-    list-style: none;
-    margin-top: 15px;
+    list-style-type: none;
+    padding: 0;
 }
 
 nav ul li {
-    display: inline-block;
-    margin: 0 20px;
+    display: inline;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: #ffffff;
+    color: #ffcc00;
+    font-size: 1.2em;
     text-decoration: none;
-    font-size: 1.1em;
-    transition: color 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #ffcc00;
+    color: #ff5733;
 }
 
+/* Seções */
 section {
-    padding: 60px 20px;
+    padding: 50px 20px;
     text-align: center;
-    max-width: 1000px;
-    margin: 0 auto;
+    margin: 30px auto;
+    max-width: 1200px;
 }
 
 section h2 {
-    font-size: 2.8em;
+    font-size: 2.5em;
     margin-bottom: 20px;
-    color: #ffcc00;
+    font-weight: bold;
 }
 
 section p {
     font-size: 1.2em;
     line-height: 1.8;
+    margin-bottom: 20px;
 }
 
-/* Botões */
+/* Botões padrão */
 a.play-button,
 a.discord-button,
 a.devs-button,
 a.group-button {
     display: inline-block;
-    margin-top: 30px;
     padding: 15px 40px;
-    border-radius: 50px;
+    color: white;
     text-decoration: none;
     font-size: 1.3em;
-    transition: all 0.3s ease;
-    color: white;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+/* Botões específicos */
 a.play-button {
     background-color: #ff5733;
 }
+
 a.play-button:hover {
-    background-color: #ff784e;
-    transform: scale(1.05);
+    background-color: #e14e2a;
+    transform: scale(1.1);
 }
 
 a.discord-button {
     background-color: #7289DA;
 }
+
 a.discord-button:hover {
     background-color: #5b6eae;
-    transform: scale(1.05);
-}
-
-a.devs-button {
-    background-color: #ff33a6;
-}
-a.devs-button:hover {
-    background-color: #ff66c4;
-    transform: scale(1.05);
-}
-
-a.group-button {
-    background-color: #00b894;
-}
-a.group-button:hover {
-    background-color: #26de81;
-    transform: scale(1.05);
-}
-
-footer {
-    background: rgba(0, 0, 0, 0.9);
-    text-align: center;
-    padding: 20px;
-    font-size: 1em;
-    color: #ccc;
-    margin-top: 50px;
+    transform: scale(1.1);
 }
