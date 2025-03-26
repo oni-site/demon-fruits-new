@@ -104,3 +104,56 @@ a.discord-button:hover {
     background-color: #5b6eae;
     transform: scale(1.1);
 }
+
+a.devs-button {
+    background-color: #ff33a6;
+}
+
+a.devs-button:hover {
+    background-color: #ff66c4;
+    transform: scale(1.1);
+}
+
+a.group-button {
+    background-color: #00cc66;
+}
+
+a.group-button:hover {
+    background-color: #00a85c;
+    transform: scale(1.1);
+}
+
+/* Rodapé */
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 1em;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 30px 15px;
+    }
+
+    a.play-button,
+    a.discord-button,
+    a.devs-button,
+    a.group-button {
+        font-size: 1.1em;
+        padding: 12px 30px;
+    }
+}
