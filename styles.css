@@ -63,9 +63,11 @@ section p {
     line-height: 1.8;
 }
 
+/* Botões */
 a.play-button,
 a.discord-button,
-a.devs-button {
+a.devs-button,
+a.group-button {
     display: inline-block;
     margin-top: 30px;
     padding: 15px 40px;
@@ -80,7 +82,6 @@ a.devs-button {
 a.play-button {
     background-color: #ff5733;
 }
-
 a.play-button:hover {
     background-color: #ff784e;
     transform: scale(1.05);
@@ -89,7 +90,6 @@ a.play-button:hover {
 a.discord-button {
     background-color: #7289DA;
 }
-
 a.discord-button:hover {
     background-color: #5b6eae;
     transform: scale(1.05);
@@ -98,9 +98,16 @@ a.discord-button:hover {
 a.devs-button {
     background-color: #ff33a6;
 }
-
 a.devs-button:hover {
     background-color: #ff66c4;
+    transform: scale(1.05);
+}
+
+a.group-button {
+    background-color: #00b894;
+}
+a.group-button:hover {
+    background-color: #26de81;
     transform: scale(1.05);
 }
 
