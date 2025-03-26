@@ -1,0 +1,138 @@
+/* Resetando margens e espaçamentos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cor de fundo e fonte geral */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #4e00ff, #00c6ff);
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+/* Cabeçalho */
+header {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffcc00;
+    font-size: 1.2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff5733;
+}
+
+/* Seções */
+section {
+    padding: 50px 20px;
+    text-align: center;
+    margin: 30px auto;
+    max-width: 1200px;
+}
+
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+section p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Botões */
+a.play-button, a.discord-button, a.devs-button {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: #ff5733;
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+a.play-button:hover, a.discord-button:hover, a.devs-button:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos específicos dos botões */
+a.discord-button {
+    background-color: #7289DA;
+}
+
+a.discord-button:hover {
+    background-color: #5b6eae;
+}
+
+a.devs-button {
+    background-color: #ff33a6;
+}
+
+a.devs-button:hover {
+    background-color: #ff66c4;
+}
+
+/* Rodapé */
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 1em;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 30px 15px;
+    }
+
+    a.play-button, a.discord-button, a.devs-button {
+        font-size: 1.1em;
+        padding: 12px 30px;
+    }
+}
